@@ -19,7 +19,7 @@ import { RoomList } from './components/RoomList.js'
 class App extends Component {
   render() {
     return (
-      <RoomList />
+      <RoomList firebase={firebase}/>
     );
   }
 }

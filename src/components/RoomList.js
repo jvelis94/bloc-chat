@@ -20,12 +20,9 @@ export class RoomList extends Component {
 
 	render() {
 		return(
-			<section>
 				<ul>{this.state.rooms.map(room =>
-					<li> return room </li> )}
+					<li> {room} </li> )}
 				</ul>
-
-			</section>
 
 		);
 	}
