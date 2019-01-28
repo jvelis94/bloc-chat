@@ -31,7 +31,6 @@ export class RoomList extends Component {
   }
 
    handleSubmit(e) {
-   	e.preventDefault();
    	this.createRoom(this.state.newRoomName);
    }
 
@@ -47,7 +46,7 @@ export class RoomList extends Component {
 				</section>
 				<section id='chatroom'>
 					{this.state.rooms.map(room =>
-					<li key={room.key}>{room.name}</li> )}
+					<li key={room.key}>{room.name.toString()}</li> )}
 				</section>
 			</section>
 			
